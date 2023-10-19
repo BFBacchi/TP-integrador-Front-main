@@ -1,0 +1,51 @@
+.navi{
+    background-color: #353a40;
+}
+.card-superpuesta img{
+    filter: brightness(30%);
+}
+
+.card-img-overlay {
+    padding-right: 8.5rem !important;
+    padding-top: 20% !important;
+    padding-left: 48% !important;
+    height: max-content;
+}
+.card-title1, .card-text1, .btn-outline {
+    color: white;
+}
+
+.card-text1 {
+    font-size: 1rem;
+    padding-top: 1.5rem;
+    text-align: justify;
+}
+
+.card-title1 {
+    font-size: 2rem;
+}
+
+.btn-success{
+    background: rgb(14, 151, 14) !important;
+}
+
+.btn-success:hover{
+    border: none;
+    background: rgb(9, 72, 9) !important;
+}
+.link-verde{
+    color: lawngreen !important;
+}
+
+@media screen and (max-width: 910px){
+    .card-superpuesta img{
+        filter: brightness(100%);
+    }
+
+    .card-img-overlay{
+        padding: 2rem !important;
+        position: static !important;
+        background-color: black;
+
+    }
+}
