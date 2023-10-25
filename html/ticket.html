@@ -58,8 +58,8 @@
     </header>
     <br>
     <div class="container grupo-tickets">
-      <div class="row row-group d-flex justify-content-center align-items-center g-1">
-          <div class="card card-tickets card-tickets-estudiante col-md-3">
+      <div class="row row-group d-flex justify-content-center align-items-center g-1" >
+          <div class="card card-tickets card-tickets-estudiante col-md-3" onclick="cambiarOpcionSelect('1')">
               <div class="card-body">
                   <h5 class="card-title"><b>Estudiante</b></h5>
                   <p class="card-text pt-2">Tienen descuento</p>
@@ -67,7 +67,7 @@
                   <p class="card-text pt-2"><small class="text-body-secondary">* presentar documentación</small></p>
               </div>
           </div>
-          <div class="card card-tickets card-tickets-trainee mx-2 col-md-3">
+          <div class="card card-tickets card-tickets-trainee mx-2 col-md-3" onclick="cambiarOpcionSelect('2')">
               <div class="card-body">
                   <h5 class="card-title"><b>Trainee</b></h5>
                   <p class="card-text pt-2">Tienen descuento</p>
@@ -75,7 +75,7 @@
                   <p class="card-text pt-2"><small class="text-body-secondary">* presentar documentación</small></p>
               </div>
           </div>
-          <div class="card card-tickets card-tickets-junior col-md-3">
+          <div class="card card-tickets card-tickets-junior col-md-3"onclick="cambiarOpcionSelect('3')">
               <div class="card-body">
                   <h5 class="card-title"><b>Junior</b></h5>
                   <p class="card-text pt-2">Tienen descuento</p>
@@ -123,11 +123,11 @@
             </div>
             <div class="col-6 mt-3">
                 <label for="" class="ps-1">Cantidad</label>
-                <input type="text" class="form-control mt-2" id="select-tickets"  placeholder="Cantidad"  aria-label="Cantidad" required>
+                <input type="text" class="form-control mt-2" id="cantidad"  placeholder="Cantidad"  aria-label="Cantidad" required>
             </div>
             <div class="col-6 mt-3">
                 <label for="" class="ps-1">Categoria</label>
-                <select name="select-tickets" id="" class="form-select select-tickets mt-2">
+                <select name="select-tickets" id="miSelect" class="form-select select-tickets mt-2">
                     <option selected>Selecciona una categoria</option>
                     <option value="1" class="value">Estudiante</option>
                     <option value="2" class="value">Trainee</option>
@@ -136,8 +136,8 @@
 
                 </select>
             </div>
-            <div class="col-12 mt-3  " >
-                <h6 class="form-control" id="total">Total a pagar: $</h6>
+            <div class="col-12 mt-3 " >
+                <h6 class="form-control total-pagar" id="total">Total a pagar: $</h6>
                 
             </div>
             <div class="col-6 mt-3">
@@ -171,5 +171,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="/ticket.js"></script>
   </body>
 </html>
