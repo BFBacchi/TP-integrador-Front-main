@@ -11,13 +11,13 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg fixed-top navi" data-bs-theme="dark">
         <div class="container-fluid">
-          <img src="/assets/codoacodo.png" alt="" width="75" class="img-fluid" />
+          <img src="assets/codoacodo.png" alt="" width="75" class="img-fluid" />
           <span class="text-lg-start text-white d-none d-lg-block"
             >Conf Bs As</span
           >
@@ -35,7 +35,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html"
+                <a class="nav-link active" aria-current="page" href="index.html"
                   >La conferencia</a
                 >
               </li>
@@ -122,8 +122,8 @@
               />
             </div>
             <div class="col-6 mt-3">
-                <label for="" class="ps-1">Cantidad</label>
-                <input type="text" class="form-control mt-2" id="cantidad"  placeholder="Cantidad"  aria-label="Cantidad" required>
+                <label for="cantidad" class="ps-1">Cantidad</label>
+                <input type="text" class="form-control mt-2" id="input-cantidad"  placeholder="Cantidad"  aria-label="Cantidad" required>
             </div>
             <div class="col-6 mt-3">
                 <label for="" class="ps-1">Categoria</label>
@@ -141,10 +141,10 @@
                 
             </div>
             <div class="col-6 mt-3">
-              <button type="submit" class="btn btn-success">Borrar</button>
+              <button type="submit" class="btn btn-success" onclick="borrar();">Borrar</button>
             </div>
             <div class="col-6 mt-3">
-                <button type="submit" class="btn btn-success">Resumen</button>
+                <button type="submit" class="btn btn-success" onclick="resumen();">Resumen</button>
               </div>
           </div>
         </div>
@@ -171,6 +171,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="/ticket.js"></script>
+    <script src="ticket.js"></script>
   </body>
 </html>

@@ -36,6 +36,10 @@
 .link-verde{
     color: lawngreen !important;
 }
+.link-verde:hover{
+    transform: scale(1.1);
+    transition: 8ms;
+}
 
 @media screen and (max-width: 910px){
     .card-superpuesta img{
